@@ -1,17 +1,18 @@
-//
-//  TodoListApp.swift
-//  TodoList
-//
-//  Created by aman kumar on 21/10/24.
-//
 
 import SwiftUI
 
 @main
 struct TodoListApp: App {
+    var listviewModel: ListViewModel = ListViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                ListView()
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
+            .environmentObject(listviewModel)
+
+
         }
     }
 }

@@ -1,9 +1,3 @@
-//
-//  TodoListUITests.swift
-//  TodoListUITests
-//
-//  Created by aman kumar on 21/10/24.
-//
 
 import XCTest
 
